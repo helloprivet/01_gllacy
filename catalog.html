@@ -3,93 +3,99 @@
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженного «Глейси»</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <a href="index.html">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a class="main-header-logo">
         <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О компании</a></li>
       </ul>
-      <div>
+      <div class="user-navigation">
         <!-- Форма поиска -->
-        <a href="#">Вход</a>
-        <a href="#">2 товара</a>
+        <a class="user-login" href="#">Вход</a>
+        <a class="user-cart" href="#">Пусто</a>
       </div>
     </nav>
-    <p>
+    <p class="header-info">
       с 10 до 20, ежедневно, <br>
-      <a href="tel:+78124502525">8 812 450-25-25</a>
+      <a class="header-phone" href="tel:+78124502525">8 812 450-25-25</a>
     </p>
   </header>
 
   <main>
-    <ul>
-      <li>
-        <a href="index.html">Главная</a>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
       </li>
-      <li>
-        <a href="catalog.html">Каталог</a>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="catalog.html">Каталог</a>
       </li>
-      <li>
+      <li class="breadcrumbs-current">
         Сливочное
       </li>
     </ul>
-    <h1>Сливочное мороженое</h1>
+    <h1 class="visually-hidden">Сливочное мороженое</h1>
 
     <section>
       <h2>Фильтр товаров</h2>
       <!-- Здесь будет форма фильтра -->
     </section>
 
-    <section>
-      <h2>Хиты продаж</h2>
-      <ul>
-        <li>
+    <section class="bestsellers">
+      <h2 class="visually-hidden">Хиты продаж</h2>
+      <ul class="bestsellers-list">
+        <li class="bestsellers-item">
           <!-- Картинка -->
-          <p>310 ₽<span>/кг</span></p>
-          <p>Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
+          <p class="bestsellers-price">
+            310 ₽
+            <span class="bestsellers-weight">/кг</span>
+          </p>
+          <p class="bestsellers-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </li>
-        <li>
+        <li class="bestsellers-item">
           <!-- Картинка -->
-          <p>380 ₽<span>/кг</span></p>
-          <p>Сливочно-кофейное с кусочками шоколада</p>
+          <p class="bestsellers-price">380 ₽<span class="bestsellers-weight">/кг</span></p>
+          <p class="bestsellers-text">Сливочно-кофейное с кусочками шоколада</p>
         </li>
-        <li>
+        <li class="bestsellers-item">
           <!-- Картинка -->
-          <p>355 ₽<span>/кг</span></p>
-          <p>Сливочно-клубничное с присыпкой из белого шоколада</p>
+          <p class="bestsellers-price">355 ₽<span class="bestsellers-weight">/кг</span></p>
+          <p class="bestsellers-text">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </li>
-        <li>
+        <li class="bestsellers-item">
           <!-- Картинка -->
-          <p>415 ₽<span>/кг</span></p>
-          <p>Сливочное крем-брюле с карамельной подливкой </p>
+          <p class="bestsellers-price">415 ₽<span class="bestsellers-weight">/кг</span></p>
+          <p class="bestsellers-text">Сливочное крем-брюле с карамельной подливкой </p>
         </li>
       </ul>
     </section>
 
-    <ul>
+    <ul class="pagination">
       <li>
         <a href="#" aria-label="Назад"></a>
       </li>
       <li>
-        <a>1</a>
+        <a class="pagination-current">1</a>
       </li>
       <li>
-        <a href="#">2</a>
+        <a class="pagination-link" href="#">2</a>
       </li>
       <li>
-        <a href="#">3</a>
+        <a class="pagination-link" href="#">3</a>
       </li>
       <li>
-        <a href="#">4</a>
+        <a class="pagination-link" href="#">4</a>
       </li>
       <li>
-        <a href="#">5</a>
+        <a class="pagination-link" href="#">5</a>
       </li>
       <li>
         <a href="#" aria-label="Вперед"></a>
@@ -99,9 +105,9 @@
   </main>
 
   <footer>
-    <section>
-      <h2>Мы в социальных сетях</h2>
-      <ul>
+    <section class="footer-social">
+      <h2 class="visually-hidden">Мы в социальных сетях</h2>
+      <ul class="social-list">
         <li><a href="" aria-label="Фейсбук"></a></li>
         <li><a href="" aria-label="Вконтакте"></a></li>
         <li><a href="" aria-label="Инстаграм"></a></li>
@@ -109,7 +115,7 @@
       </ul>
     </section>
 
-    <ul>
+    <ul class="footer-links">
       <li>
         <a href="">Для поставщиков</a>
       </li>
@@ -124,7 +130,7 @@
       </li>
     </ul>
 
-    <p>
+    <p class="footer-copyright">
       <!-- Лого -->
       Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
     </p>

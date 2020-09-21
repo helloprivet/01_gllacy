@@ -408,3 +408,43 @@ img {
 .footer-copyright a:active {
   color: var(--sitelink);
 }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-white);
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  color: var(--basic-white);
+}
+
+.breadcrumbs-link:hover {
+  color: var(--sitelink);
+}
+
+/* Pagination */
+.pagination {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+  list-style: none;
+}
+
+.pagination-current {
+  background-color: var(--basic-white);
+  color: var(--basic-ligt-dark);
+}
+
+.pagination-link {
+  text-decoration: none;
+  color: var(--basic-white);
+}
+
+.pagination-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
