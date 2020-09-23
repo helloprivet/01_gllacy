@@ -10,13 +10,34 @@
 <body>
   <header class="main-header">
     <nav class="main-navigation">
-      <a class="main-header-logo">
-        <img src="https://via.placeholder.com/154x64" width="154" height="64" alt="Логотип магазина «Глейси»">
+      <a href="index.html" class="main-header-logo">
+        <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
       <ul class="site-navigation">
-        <li><a href="catalog.html">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О компании</a></li>
+        <li class="dropdown">
+          <a class="site-link">Каталог</a>
+          <ul class="subnavigation">
+            <li class="subnavigation-title">Новинки</li>
+            <li>
+              <a class="subnavigation-link" href="catalog.html">Сливочное</a>
+            </li>
+            <li>
+              <a class="subnavigation-link" href="">Щербеты</a>
+            </li>
+            <li>
+              <a class="subnavigation-link" href="">Фруктовый лед</a>
+            </li>
+            <li>
+              <a class="subnavigation-link" href="">Мелорин</a>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <a class="site-link" href="#">Доставка и оплата</a>
+        </li>
+        <li>
+          <a class="site-link" href="#">О компании</a>
+        </li>
       </ul>
       <div class="user-navigation">
         <!-- Форма поиска -->
@@ -53,7 +74,8 @@
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="bestsellers-list">
         <li class="bestsellers-item">
-          <!-- Картинка -->
+          <img src="img/product.png" width="267" height="267"
+               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="bestsellers-price">
             310 ₽
             <span class="bestsellers-weight">/кг</span>
@@ -61,17 +83,20 @@
           <p class="bestsellers-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
         </li>
         <li class="bestsellers-item">
-          <!-- Картинка -->
+          <img src="img/product.png" width="267" height="267"
+               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="bestsellers-price">380 ₽<span class="bestsellers-weight">/кг</span></p>
           <p class="bestsellers-text">Сливочно-кофейное с кусочками шоколада</p>
         </li>
         <li class="bestsellers-item">
-          <!-- Картинка -->
+          <img src="img/product.png" width="267" height="267"
+               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="bestsellers-price">355 ₽<span class="bestsellers-weight">/кг</span></p>
           <p class="bestsellers-text">Сливочно-клубничное с присыпкой из белого шоколада</p>
         </li>
         <li class="bestsellers-item">
-          <!-- Картинка -->
+          <img src="img/product.png" width="267" height="267"
+               alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
           <p class="bestsellers-price">415 ₽<span class="bestsellers-weight">/кг</span></p>
           <p class="bestsellers-text">Сливочное крем-брюле с карамельной подливкой </p>
         </li>
@@ -108,10 +133,26 @@
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
-        <li><a href="" aria-label="Фейсбук"></a></li>
-        <li><a href="" aria-label="Вконтакте"></a></li>
-        <li><a href="" aria-label="Инстаграм"></a></li>
-        <li><a href="" aria-label="Твиттер"></a></li>
+        <li>
+          <a href="" aria-label="Фейсбук">
+            <img src="img/icon-vk.svg" width="32" height="32" alt="Вконтакте">
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Вконтакте">
+            <img src="img/icon-facebook.svg" width="32" height="32" alt="Facebook">
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Инстаграм">
+            <img src="img/icon-instagram.svg" width="32" height="32" alt="Instagram">
+          </a>
+        </li>
+        <li>
+          <a href="" aria-label="Твиттер">
+            <img src="img/icon-twitter.svg" width="32" height="32" alt="Twitter">
+          </a>
+        </li>
       </ul>
     </section>
 
@@ -131,7 +172,9 @@
     </ul>
 
     <p class="footer-copyright">
-      <!-- Лого -->
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип HTML Academy">
+      </a>
       Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
     </p>
   </footer>

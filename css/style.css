@@ -108,13 +108,13 @@ img {
   list-style: none;
 }
 
-.site-navigation a {
+.site-link {
   font-weight: 700;
   line-height: 18px;
   color: var(--basic-white);
 }
 
-.site-navigation a:hover {
+.site-link:hover {
   color: var(--basic-ligt-dark);
   text-decoration: none;
 
@@ -122,13 +122,46 @@ img {
   border-radius: 26px;
 }
 
-.site-navigation a:active {
+.site-link:active {
   color: var(--basic-ligt-dark);
 
   background-color: var(--active-navlink);
   box-shadow: inset 0 2px 1px #696969;
   border-radius: 26px;
 }
+
+.subnavigation {
+  list-style: none;
+  background-color: var(--basic-white);
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+}
+
+.subnavigation-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-ligt-dark);
+}
+
+.subnavigation-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--basic-ligt-dark);
+  text-decoration: none;
+}
+
+.subnavigation-link:hover {
+  background-color: var(--hover-submenu);
+  border-radius: 0;
+}
+
+.subnavigation-link:active {
+  background-color: var(--active-submenu);
+}
+
+
 
 .user-navigation {
   font-size: 14px;
