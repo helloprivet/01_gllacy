@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 <head>
   <meta charset="utf-8">
   <title>Магазин мороженного «Глейси»</title>
@@ -7,8 +7,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-  <header class="main-header">
+<body class="page-body">
+  <header class="main-header container">
     <nav class="main-navigation">
       <a class="main-header-logo">
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
@@ -51,23 +51,23 @@
     </p>
   </header>
 
-  <main>
+  <main class="container">
     <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
 
     <section class="offers">
       <h2 class="visually-hidden">Лучшие предложения</h2>
       <ul class="offers-list">
-        <li class="offers-item">
+        <li class="offers-item active-item">
           <img src="img/slider-1.png" width="647" height="584" alt="Крем-брюле и пломбир с малиновым джемом">
           <h3 class="offers-title">Крем-брюле и пломбир с малиновым джемом</h3>
           <a class="button offers-button" href="#">Давайте оба!</a>
         </li>
-        <li>
+        <li class="offers-item">
           <img src="img/slider-2.png" width="644" height="582" alt="Шоколадный пломбир и лимонный сорбет">
           <h3 class="offers-title">Шоколадный пломбир и лимонный сорбет</h3>
           <a class="button offers-button" href="#">Давайте оба!</a>
         </li>
-        <li>
+        <li class="offers-item">
           <img src="img/slider-3.png" width="639" height="582" alt="Шоколадный пломбир и лимонный сорбет">
           <h3 class="offers-title">Пломбир с помадкой и клубничный щербет</h3>
           <a class="button offers-button" href="#">Давайте оба!</a>
@@ -170,19 +170,20 @@
       </ul>
     </section>
 
-    <article class="blog">
-      <h2 class="visually-hidden">Блог</h2>
-      <p class="blog-text">Новое в нашем блоге</p>
-      <a class="blog-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
-    </article>
+    <div class="column-wrapper">
+      <article class="blog">
+        <h2 class="visually-hidden">Блог</h2>
+        <p class="blog-text">Новое в нашем блоге</p>
+        <a class="blog-link" href="">10 способов сервировки фруктовых щербетов к столу</a>
+      </article>
 
-    <section class="mailing">
-      <h2 class="visually-hidden">Рассылка</h2>
-      <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что у
-        нас происходит.
-        Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-      <!-- Форма -->
-    </section>
+      <section class="mailing">
+        <h2 class="visually-hidden">Рассылка</h2>
+        <p class="mailing-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого вкусного, что
+          у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+        <!-- Форма -->
+      </section>
+    </div>
 
     <section class="contacts">
       <h2 class="visually-hidden">Как нас найти</h2>
@@ -195,7 +196,7 @@
     </section>
   </main>
 
-  <footer>
+  <footer class="main-footer container">
     <section class="footer-social">
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
