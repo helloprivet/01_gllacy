@@ -577,7 +577,7 @@ img {
 /* Footer copyright */
 .footer-copyright {
   margin: 0;
-  
+
   font-weight: 400;
   font-size: 12px;
   line-height: 18px;
@@ -595,13 +595,25 @@ img {
   color: var(--sitelink);
 }
 
+/* Filters */
+.filters {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
 /* Breadcrumbs */
 .breadcrumbs {
+  margin: 0;
+  padding: 0;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: var(--basic-white);
   list-style: none;
+
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .breadcrumbs-link {
@@ -614,11 +626,18 @@ img {
 
 /* Pagination */
 .pagination {
+  margin: 0;
+  padding: 0;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
   list-style: none;
+  text-align: right;
+
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .pagination-current {
