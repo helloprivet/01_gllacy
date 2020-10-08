@@ -112,6 +112,10 @@ img {
   padding: 0 27px;
 }
 
+.hide {
+  display: none;
+}
+
 /* Body */
 
 .page-body {
@@ -124,8 +128,8 @@ img {
 /* Main header */
 
 .main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
+  position: relative;
+  margin-bottom: 100px;
 }
 
 .main-navigation {
@@ -135,24 +139,42 @@ img {
 }
 
 .main-header-logo {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
+  width: 154px;
+  height: 64px;
 }
 
 .site-navigation {
-  margin: 0;
-  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 0 0 10px;
+  padding: 16px 0 0 0;
 
   list-style: none;
-
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .site-link {
+  position: relative;
+
+  display: block;
+  padding: 5px 15px 6px;
+  margin-right: 2px;
+
   font-weight: 700;
   line-height: 18px;
+  text-decoration: none;
   color: var(--basic-white);
+}
+
+.site-link::after {
+  content: "";
+
+  position: absolute;
+  left: 15px;
+  right: 15px;
+  bottom: 6px;
+
+  height: 1px;
+  background-color: var(--user-background);
 }
 
 .site-link:hover {
@@ -206,17 +228,19 @@ img {
 }
 
 .user-navigation {
-  padding-top: 14px;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 13px;
 
   font-size: 14px;
   line-height: 16px;
-
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .user-login,
 .user-cart {
+  padding: 8px 16px 8px 45px;
+  margin-left: 10px;
+
   color: var(--basic-white);
   text-decoration: none;
 
@@ -231,18 +255,43 @@ img {
   background-color: var(--basic-white);
 }
 
+.user-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+
+  background-color: var(--user-background);
+  border-radius: 50%;
+}
+
+.user-search:hover {
+  background-color: var(--basic-white);
+}
+
+.user-search:hover path {
+  fill: var(--basic-ligt-dark);
+}
+
 .header-info {
+  position: absolute;
+  right: 27px;
+  bottom: -3px;
+  transform: translateY(100%);
+
   margin: 0;
 
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
   text-align: right;
-  outline: 5px solid rgba(11, 0, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .header-phone {
+  display: block;
+  margin-top: 8px;
+
   color: var(--basic-white);
   font-size: 22px;
   line-height: 24px;
