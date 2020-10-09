@@ -402,9 +402,6 @@ img {
 
 .promotions {
   margin-bottom: 40px;
-
-  outline: 5px solid rgba(255, 0, 255 , 0.3);
-  outline-offset: -5px;
 }
 
 .promotions-list {
@@ -471,32 +468,67 @@ img {
 
 .bestsellers {
   margin-bottom: 40px;
-
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
 }
 
 
 .bestsellers-list {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0;
+  gap: 26px;
   padding: 0;
+  margin: 0;
+
   list-style: none;
 }
 
 .bestsellers-item {
-  width: 293px;
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.bestsellers-item:hover {
-  background-color: var(--user-background);
+.bestsellers-item:hover::before {
+  content: "";
 
-  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  left: -13px;
+  top: -6px;
+  z-index: 0;
+
+  box-sizing: content-box;
+  width: 100%;
+  min-height: 100%;
+  padding: 6px 13px 56px;
+
+  background-color: var(--user-background);
   border-radius: 4px;
 }
 
+.bestsellers-wrapper {
+  position: relative;
+  margin-bottom: 7px;
+}
+
+.bestsellers-hit {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 61px;
+  height: 61px;
+
+  background-color: var(--basic-white);
+  background-image: url("../img/hit.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
 .bestsellers-price {
+  position: absolute;
+  bottom: 19px;
   margin: 0;
 
   font-weight: 700;
@@ -515,7 +547,10 @@ img {
 }
 
 .bestsellers-text {
-  margin: 0;
+  z-index: 1;
+
+  margin: 0 0 7px;
+  padding: 0 5px;
 
   font-weight: 500;
   font-size: 16px;
@@ -524,16 +559,39 @@ img {
   text-align: center;
 }
 
+.bestsellers-button {
+  position: absolute;
+
+  display: none;
+  padding: 10px 17px;
+
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.bestsellers-item:hover .bestsellers-button {
+  display: block;
+  bottom: -44px;
+}
+
+
+
 /* About us */
 
 .about-us {
   margin-bottom: 40px;
-  /*background-image: ;*/
+  padding: 18px 21px 0;
+
+  background-image: url("../img/waffle-pattern.jpg");
+  background-position: left top;
   background-color: var(--about-us);
   border-radius: 16px;
 }
 
 .about-us-title {
+  display: block;
+  margin-bottom: 16px;
+
   font-weight: 500;
   font-size: 24px;
   line-height: 30px;
@@ -541,14 +599,23 @@ img {
 }
 
 .about-us-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
 
   list-style: none;
 }
 
+.about-us-item {
+  width: 540px;
+  margin-bottom: 22px;
+}
+
 .about-us-text {
   margin: 0;
+  padding-left: 55px;
 
   font-weight: 400;
   font-size: 16px;
