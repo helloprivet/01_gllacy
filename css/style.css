@@ -575,11 +575,10 @@ img {
 }
 
 
-
 /* About us */
 
 .about-us {
-  margin-bottom: 40px;
+  margin-bottom: 47px;
   padding: 18px 21px 0;
 
   background-image: url("../img/waffle-pattern.jpg");
@@ -624,6 +623,7 @@ img {
 }
 
 /* Column wrapper */
+
 .column-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -633,14 +633,22 @@ img {
 
 /* Blog */
 
+.blog,
+.mailing {
+  min-height: 220px;
+}
+
 .blog {
-  /*background-image: ;*/
+  padding: 18px 20px;
+  background-image: url("../img/bg-strawberry.png");
   background-color: var(--basic-white);
+  background-position: left top;
+  background-repeat: no-repeat;
   border-radius: 16px;
 }
 
 .blog-text {
-  margin: 0;
+  margin: 0 0 3px;
 
   font-weight: 500;
   font-size: 16px;
@@ -649,6 +657,9 @@ img {
 }
 
 .blog-link {
+  display: block;
+  width: 300px;
+
   font-weight: 700;
   font-size: 24px;
   line-height: 30px;
@@ -663,18 +674,59 @@ img {
 /* Mailing */
 
 .mailing {
-  /*background-image: ;*/
+  padding: 5px 6px;
+
+  background-image: url("../img/bg-mail.png") ;
+  background-color: var(--mailing);
+  border-radius: 16px;
+}
+
+.mailing-wrapper {
+  padding: 24px 20px;
+  min-height: 210px;
+
   background-color: var(--mailing);
   border-radius: 16px;
 }
 
 .mailing-text {
-  margin: 0;
+  margin: 0 0 40px;
 
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: var(--basic-gray);
+}
+
+.mailing-form {
+  display: flex;
+  align-items: flex-start;
+}
+
+.mailing-input {
+  margin-right: 10px;
+  padding: 12px 13px;
+  width: 100%;
+
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  background-color: var(--basic-white);
+  border: 1px solid rgba(178, 178, 178, 0.52);
+  border-radius: 6px;
+}
+
+.mailing-button {
+  padding: 11px 19px;
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+
+  border: none;
 }
 
 /* Contacts */
