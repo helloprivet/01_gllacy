@@ -16,23 +16,23 @@
       <ul class="site-navigation">
         <li class="dropdown">
           <a class="site-link">Каталог</a>
-          <div class="hide">
-            <ul class="subnavigation">
-              <li class="subnavigation-title">Новинки</li>
-              <li>
-                <a class="subnavigation-link" href="catalog.html">Сливочное</a>
-              </li>
-              <li>
-                <a class="subnavigation-link" href="#">Щербеты</a>
-              </li>
-              <li>
-                <a class="subnavigation-link" href="#">Фруктовый лед</a>
-              </li>
-              <li>
-                <a class="subnavigation-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="subnavigation">
+            <li class="subnavigation-item">
+              <span class="subnavigation-title">Новинки</span>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="catalog.html">Сливочное</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Щербеты</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Фруктовый лед</a>
+            </li>
+            <li class="subnavigation-item">
+              <a class="subnavigation-link" href="#">Мелорин</a>
+            </li>
+          </ul>
         </li>
         <li>
           <a class="site-link" href="#">Доставка и оплата</a>
@@ -42,17 +42,65 @@
         </li>
       </ul>
       <div class="user-navigation">
-        <a class="user-search" href="#">
-          <span class="visually-hidden">Поиск</span>
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <div class="user-search-wrapper">
+          <a class="user-search" href="#">
+            <span class="visually-hidden">Поиск</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
+                fill="white"/>
+            </svg>
+          </a>
+          <form class="user-search-form show-form" action="https://echo.htmlacademy.ru" method="get">
+            <label class="visually-hidden" for="user-search-input">Поиск</label>
+            <input class="input user-search-input" id="user-search-input" type="text" name="search-text"
+                   placeholder="Крем-брюле">
+          </form>
+        </div>
+        <div class="user-login-wrapper">
+          <a class="user-login" href="#">
+            <svg class="user-login-icon" width="20" height="19" viewBox="0 0 20 19" fill="white"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.04 14.88L12.96 9.5L6.04 4.13V7.04H0V11.96H6.04V14.88Z"/>
+              <path
+                d="M18 0H5C4.46957 0 3.96086 0.210714 3.58579 0.585786C3.21071 0.960859 3 1.46957 3 2V4H5V2H18V17H5V15H3V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19H18C18.5304 19 19.0391 18.7893 19.4142 18.4142C19.7893 18.0391 20 17.5304 20 17V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0Z"/>
+            </svg>
+            Вход
+          </a>
+          <form class="user-login-form show-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="input-wrapper">
+              <label class="visually-hidden" for="user-login-email">E-mail</label>
+              <input class="input user-login-email" id="user-login-email" type="email" name="user-login-email"
+                     placeholder="email@example.com">
+            </div>
+            <div class="input-wrapper">
+              <label class="visually-hidden" for="user-login-password">Пароль</label>
+              <input class="input user-login-password" id="user-login-password" type="password"
+                     name="user-login-password"
+                     placeholder="......">
+            </div>
+            <div class="login-help-wrapper">
+              <button class="button user-login-button" type="submit">Войти</button>
+              <div class="login-link-wrapper">
+                <a class="user-login-forgot" href="#">Забыли пароль?</a>
+                <a class="user-login-registration" href="#">Новая регистрация</a>
+              </div>
+            </div>
+          </form>
+        </div>
+        <a class="user-cart" href="#">
+          <svg class="user-cart-icon" width="21" height="20" viewBox="0 0 21 20" fill="white"
+               xmlns="http://www.w3.org/2000/svg">
             <path
-              d="M16 14.6652L11.0785 9.73294C11.9827 8.48188 12.3826 6.93501 12.1984 5.40134C12.0141 3.86767 11.2594 2.4601 10.0848 1.45982C8.91022 0.45954 7.40233 -0.0598191 5.86234 0.00548954C4.32234 0.0707982 2.86363 0.715967 1.77757 1.81212C0.691516 2.90827 0.0580813 4.3747 0.0038002 5.91849C-0.050481 7.46228 0.478388 8.96976 1.48476 10.1398C2.49113 11.3098 3.90092 12.0563 5.43251 12.2301C6.96409 12.4039 8.50472 11.9922 9.74663 11.0772L14.6586 16L16 14.6652ZM6.08152 10.3767C5.24079 10.3767 4.41895 10.1268 3.71991 9.65874C3.02087 9.19063 2.47604 8.5253 2.15431 7.74687C1.83258 6.96844 1.7484 6.11188 1.91241 5.28551C2.07643 4.45913 2.48128 3.70006 3.07576 3.10427C3.67024 2.50849 4.42766 2.10276 5.25223 1.93838C6.0768 1.77401 6.93149 1.85837 7.70822 2.1808C8.48495 2.50324 9.14883 3.04927 9.61591 3.74983C10.083 4.4504 10.3323 5.27404 10.3323 6.11661C10.3298 7.24568 9.88115 8.3278 9.08451 9.12618C8.28788 9.92456 7.20813 10.3742 6.08152 10.3767Z"
-              fill="white"/>
+              d="M5.70345 2L5.46161 0H0V2H3.66795L5.17946 15H19.2869L21 2H5.70345ZM17.5034 13H6.97313L5.96545 4H18.6924L17.5034 13Z"/>
+            <path
+              d="M7.03359 20C8.14664 20 9.04894 19.1046 9.04894 18C9.04894 16.8954 8.14664 16 7.03359 16C5.92054 16 5.01823 16.8954 5.01823 18C5.01823 19.1046 5.92054 20 7.03359 20Z"/>
+            <path
+              d="M16.1027 20C17.2157 20 18.118 19.1046 18.118 18C18.118 16.8954 17.2157 16 16.1027 16C14.9896 16 14.0873 16.8954 14.0873 18C14.0873 19.1046 14.9896 20 16.1027 20Z"/>
           </svg>
-          <!-- Тут будет форма -->
+
+          Пусто
         </a>
-        <a class="user-login" href="#">Вход</a>
-        <a class="user-cart" href="#">Пусто</a>
       </div>
     </nav>
     <p class="header-info">
@@ -60,6 +108,7 @@
       <a class="header-phone" href="tel:+78124502525">8 812 450-25-25</a>
     </p>
   </header>
+
   <main class="page-main">
     <div class="container">
       <h1 class="visually-hidden">Магазин мороженного «Глейси»</h1>
@@ -88,7 +137,7 @@
         </ul>
         <ul class="offers-controls">
           <li>
-            <button class="current" type="button" aria-label="Первый слайд"></button>
+            <button class="slide-button current-slide" type="button" aria-label="Первый слайд"></button>
           </li>
           <li>
             <button type="button" aria-label="Второй слайд"></button>
@@ -187,22 +236,26 @@
           производства на развес</b>
         <ul class="about-us-list">
           <li class="about-us-item">
-            <p class="about-us-text">Все наше мороженое изготавливается на собственном производстве, с использованием
+            <p class="about-us-text ice-cream-icon">Все наше мороженое изготавливается на собственном производстве, с
+              использованием
               современного оборудования
               и проверенных временем технологий.</p>
           </li>
           <li class="about-us-item">
-            <p class="about-us-text">Закупка ингредиентов производится только у проверенных фермерских хозяйств и
+            <p class="about-us-text cow-icon">Закупка ингредиентов производится только у проверенных фермерских хозяйств
+              и
               компаний, с которыми нас
               связывает долговременное сотрудничество.</p>
           </li>
           <li class="about-us-item">
-            <p class="about-us-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего
+            <p class="about-us-text leaf-icon">Для приготовления мороженого используются настоящие сливки и молоко
+              высочайшего
               качества. Все
               дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.</p>
           </li>
           <li class="about-us-item">
-            <p class="about-us-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке,
+            <p class="about-us-text thermometer-icon">Доставка нашего мороженого до заказчиков осуществляется в
+              специальном термопаке,
               который не дает
               мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
@@ -223,7 +276,8 @@
               что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
               <label class="visually-hidden" for="mailing-input">Форма подписки</label>
-              <input class="mailing-input" id="mailing-input" type="email" name="email" placeholder="email@example.com">
+              <input class="input mailing-input" id="mailing-input" type="email" name="email"
+                     placeholder="email@example.com">
               <button class="button mailing-button" type="submit">Отправить</button>
             </form>
           </div>
@@ -251,22 +305,22 @@
       <h2 class="visually-hidden">Мы в социальных сетях</h2>
       <ul class="social-list">
         <li>
-          <a href="" aria-label="Фейсбук">
+          <a class="social-link" href="" aria-label="Фейсбук">
             <img class="social-icon" src="img/icon-vk.svg" width="32" height="32" alt="Вконтакте">
           </a>
         </li>
         <li>
-          <a href="" aria-label="Вконтакте">
+          <a class="social-link" href="" aria-label="Вконтакте">
             <img class="social-icon" src="img/icon-facebook.svg" width="32" height="32" alt="Facebook">
           </a>
         </li>
         <li>
-          <a href="" aria-label="Инстаграм">
+          <a class="social-link" href="" aria-label="Инстаграм">
             <img class="social-icon" src="img/icon-instagram.svg" width="32" height="32" alt="Instagram">
           </a>
         </li>
         <li>
-          <a href="" aria-label="Твиттер">
+          <a class="social-link" href="" aria-label="Твиттер">
             <img class="social-icon" src="img/icon-twitter.svg" width="32" height="32" alt="Twitter">
           </a>
         </li>
@@ -275,7 +329,7 @@
 
     <ul class="footer-links">
       <li>
-        <a href="">Для поставщиков</a>
+        <a class="for-suppliers" href="">Для поставщиков</a>
       </li>
       <li>
         <a href="#">Наши документы</a>
@@ -298,5 +352,32 @@
     </p>
 
   </footer>
+
+  <!-- .modal-show: показать блок -->
+  <section class="modal">
+    <h2 class="visually-hidden">Обратная связь</h2>
+    <p class="feedback-text">Мы обязательно вам ответим!</p>
+    <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+      <div class="input-wrapper">
+        <label class="visually-hidden" for="feedback-name">Имя</label>
+        <input class="input feedback-input-name" id="feedback-name" type="text" name="feedback-name"
+               placeholder="Имя Фамилия">
+      </div>
+      <div class="input-wrapper">
+        <label class="visually-hidden" for="feedback-email">E-mail</label>
+        <input class="input feedback-input-email" id="feedback-email" type="email" name="feedback-email"
+               placeholder="email@example.com">
+      </div>
+      <div class="input-wrapper">
+        <label class="visually-hidden" for="feedback-text">Текст сообщения</label>
+        <textarea class="input feedback-textarea" id="feedback-text" name="feedback-text"
+                  placeholder="В свободной форме"></textarea>
+      </div>
+      <div class="button-wrapper">
+        <button class="button feedback-button" type="submit">Отправить</button>
+      </div>
+    </form>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
+  </section>
 </body>
 </html>
