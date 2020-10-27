@@ -814,7 +814,11 @@ img {
 /* Bestsellers */
 
 .bestsellers {
-  margin-bottom: 74px;
+  margin-bottom: 40px;
+}
+
+.catalog-page {
+  margin-bottom: 73px;
 }
 
 
