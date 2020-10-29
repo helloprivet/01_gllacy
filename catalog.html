@@ -7,15 +7,15 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body class="page-body">
+<body class="page-body body-main-background">
   <header class="main-header container">
     <nav class="main-navigation">
-      <a class="main-header-logo">
+      <a class="main-header-logo" href="index.html">
         <img src="img/logo-gllacy.svg" width="154" height="64" alt="Логотип магазина «Глейси»">
       </a>
       <ul class="site-navigation">
         <li class="dropdown">
-          <a class="site-link site-link-current">Каталог</a>
+          <a class="site-link site-link-current" tabindex="0">Каталог</a>
           <ul class="subnavigation">
             <li class="subnavigation-item">
               <span class="subnavigation-title">Новинки</span>
@@ -162,9 +162,9 @@
               <option>сначала дороже</option>
               <option>по алфавиту</option>
             </select>
-            <svg class="filters-sorting-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none"
+            <svg class="filters-sorting-arrow" width="11" height="10" viewBox="0 0 11 10" fill="#ECF1EE"
                  xmlns="http://www.w3.org/2000/svg">
-              <path d="M5.5 10L0 0H11" fill="#ECF1EE"/>
+              <path d="M5.5 10L0 0H11"/>
             </svg>
           </div>
         </fieldset>
@@ -192,7 +192,7 @@
             </li>
             <li class="filters-radio">
               <input class="filters-input-radio visually-hidden" id="filter-before-10" type="radio" name="fatness"
-                     value="10-percent">
+                     value="10-percent" checked>
               <label class="filters-label-radio" for="filter-before-10">до 10%</label>
             </li>
             <li class="filters-radio">
@@ -241,7 +241,7 @@
     <section class="bestsellers catalog-page">
       <h2 class="visually-hidden">Хиты продаж</h2>
       <ul class="bestsellers-list">
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-11.png" width="267" height="267"
                  alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
@@ -252,7 +252,7 @@
           <p class="bestsellers-text">Сливочное с апельсиновым джемом и цитрусовой стружкой</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-10.png" width="267" height="267"
                  alt="Сливочно-кофейное с кусочками шоколада">
@@ -263,7 +263,7 @@
           <p class="bestsellers-text">Сливочно-кофейное с кусочками шоколада</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-9.png" width="267" height="267"
                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -274,7 +274,7 @@
           <p class="bestsellers-text">Сливочно-клубничное с присыпкой из белого шоколада</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-8.png" width="267" height="267"
                  alt="Сливочно-клубничное с присыпкой из белого шоколада">
@@ -285,7 +285,7 @@
           <p class="bestsellers-text">Сливочное крем-брюле с карамельной подливкой </p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-7.png" width="267" height="267"
                  alt="Сливочное с брусничным джемом">
@@ -296,7 +296,7 @@
           <p class="bestsellers-text">Сливочное с брусничным джемом</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-6.png" width="267" height="267"
                  alt="Сливочно-черничное с цельными ягодами черники ">
@@ -307,7 +307,7 @@
           <p class="bestsellers-text">Сливочно-черничное с цельными ягодами черники </p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-5.png" width="267" height="267"
                  alt="Сливочно-лимонное с карамельной присыпкой">
@@ -318,7 +318,7 @@
           <p class="bestsellers-text">Сливочно-лимонное с карамельной присыпкой</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-4.png" width="267" height="267"
                  alt="Сливочное с шоколадной стружкой">
@@ -329,7 +329,7 @@
           <p class="bestsellers-text">Сливочное с шоколадной стружкой</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-3.png" width="267" height="267"
                  alt="Сливочно-ванильное с кусочками шоколада">
@@ -340,7 +340,7 @@
           <p class="bestsellers-text">Сливочно-ванильное с кусочками шоколада</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-2.png" width="267" height="267"
                  alt="Сливочноe с ментоловым сиропом">
@@ -351,7 +351,7 @@
           <p class="bestsellers-text">Сливочноe с ментоловым сиропом</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product-1.png" width="267" height="267"
                  alt="Сливочное с кусочками черного шоколада">
@@ -362,7 +362,7 @@
           <p class="bestsellers-text">Сливочное с кусочками черного шоколада</p>
           <a class="button bestsellers-button" href="#">Быстрый просмотр</a>
         </li>
-        <li class="bestsellers-item">
+        <li class="bestsellers-item" tabindex="0">
           <div class="bestsellers-wrapper">
             <img class="bestsellers-img" src="img/product.png" width="267" height="267"
                  alt="Сливочное с мятным сиропом">
@@ -379,7 +379,7 @@
 
     <ul class="pagination">
       <li class="pagination-item disabled">
-        <a href="#" aria-label="Назад"></a>
+        <a class="pagination-button" href="#" aria-label="Назад"></a>
       </li>
       <li class="pagination-item">
         <a class="pagination-link pagination-current">1</a>
@@ -397,7 +397,7 @@
         <a class="pagination-link" href="#">5</a>
       </li>
       <li class="pagination-item">
-        <a href="#" aria-label="Вперед"></a>
+        <a class="pagination-button" href="#" aria-label="Вперед"></a>
       </li>
     </ul>
 
