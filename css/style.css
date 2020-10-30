@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Variables */
 
 :root {
@@ -944,12 +951,15 @@ img {
 
 .offers-button {
   display: inline-block;
+
   padding: 9px 23px;
 
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
   text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  vertical-align: top;
 }
 
 .offers-controls {
@@ -1589,6 +1599,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
   margin: 0;
   padding: 17px 0 0;
 
@@ -1598,6 +1611,7 @@ img {
 .social-link {
   display: block;
   margin-right: 12px;
+  margin-bottom: 2px;
 }
 
 .social-icon {
@@ -1642,6 +1656,8 @@ img {
   font-size: 13px;
   line-height: 18px;
   color: var(--basic-white);
+
+  vertical-align: top;
 }
 
 .footer-links a:hover,
