@@ -7,7 +7,7 @@
 
 100%-ая защита проекта, соответствующая всем критериям и техническому заданию
 
-[Гластная страница](https://helloprivet.github.io/01_gllacy/index.html) <br>
+[Главная страница](https://helloprivet.github.io/01_gllacy/index.html) <br>
 [Страница каталога](https://helloprivet.github.io/01_gllacy/catalog.html)
 
 
